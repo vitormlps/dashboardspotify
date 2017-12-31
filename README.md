@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # dashboardspotify
 Data visualization dashboard for Spotify users to visualize their musical taste and style.
 
@@ -8,16 +7,6 @@ Academic project using https://developer.spotify.com/
 Developed by Gabriel da Costa, Gabriélen Cunha, Guilherme Menezes, João Luiz Scherer, Lisandro, Márcio R.W. de Souza, Paola Fantinel, Saul Vargas and Vitor Lopes.
 
 SENAC/RS - 2022/2
-=======
-# Spotify Accounts Authentication Examples
-
-This project contains basic demos showing the different OAuth 2.0 flows for [authenticating against the Spotify Web API](https://developer.spotify.com/web-api/authorization-guide/).
-
-These examples cover:
-
-* Authorization Code flow
-* Client Credentials flow
-* Implicit Grant flow
 
 ## Installation
 
@@ -27,25 +16,12 @@ Once installed, clone the repository and install its dependencies running:
 
     $ npm install
 
-## Running the examples
-In order to run the different examples, open the folder with the name of the flow you want to try out, and run its `app.js` file. For instance, to run the Authorization Code example do:
-
-    $ cd authorization_code
-    $ node app.js
-
-Then, open `http://localhost:8888` in a browser.
-
 ### Using your own credentials
-The examples contains a working client ID and secret key. Note, however, that they might be rate limited if they are used frequently. If you are planning to create an application, we recommend you register your app and get your own credentials instead of using the ones in this project.
+You will need to register your app and get your own credentials from the Spotify for Developers Dashboard.
 
-Go to [My Applications on Spotify Developer](https://developer.spotify.com/my-applications) and create your application. For the examples, we registered these Redirect URIs:
+To do so, go to [your Spotify for Developers Dashboard](https://beta.developer.spotify.com/dashboard) and create your application. For the examples, we registered these Redirect URIs:
 
-* http://localhost:8888 (needed for the implicit grant flow)
-* http://localhost:8888/callback
+* http://localhost:8001 (needed for the implicit grant flow)
+* http://localhost:8001/callback
 
 Once you have created your app, replace the `client_id`, `redirect_uri` and `client_secret` in the examples with the ones you get from My Applications.
-<<<<<<< HEAD
-
->>>>>>> 684ad7d (first commit)
-=======
->>>>>>> d3f229b (Update README.md)
