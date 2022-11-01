@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #191414;
+
+}
+
+.imagem img{
+  justify-content: center;
+  align-items: center;
+  width: 720px;
+  height: 212px;
+  margin-left: 440px;
+  margin-top: 147px;
+	border-radius: 3ch;
+  overflow: auto;
+}
+
+.login{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__conteiner{
+  width: 540px;
+  height: 300px;
+  margin-left: 10px;
+  margin-top: -290px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 32px;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.login__title{
+  margin-bottom: 32px;
+}
+
+.login__form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_input{
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 8px;
+  border: unset;
+  outline: none;
+}
+
+#email.login_input {
+  width: 350px;
+  height: 50px;
+  margin-left: 20%;
+  margin-right: 0%;
+  margin-top: 0%;
+  bottom: 0%;
+  background: #E2E2E2;
+  border-radius: 5px;
+}
+
+#password.login_input {
+  width: 350px;
+  height: 50px;
+  margin-left: 20%;
+  margin-right: 0%;
+  margin-top: 8%;
+  bottom: 0%;
+  background: #E2E2E2;
+  border-radius: 5px;
+}
+
+.login_input-border{
+  margin-left: 30px;
+  margin-top: -30px;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 16px;  
+}
+
+.login_input-border::after{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  margin-bottom: 16px;
+}
+
+.login_input:focus + .login_input-border::after{
+  width: 100%;
+}
+
+.login_submit{
+  margin-top: 50px;
+  height: 40px;
+  width: 449px;
+  outline: none;
+  background: #1B9245;
+  background-size: 200%;
+  margin-bottom: 32px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bolder;
+  border: unset;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.login_submit:hover{
+  background-position: right;
+}
+
+.login_reset{
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+}
+
+.credits{
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 48px;
+  width: 592px;
+  margin-left: 498px;
+  margin-top: -100px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}

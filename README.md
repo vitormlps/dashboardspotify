@@ -25,3 +25,8 @@ To do so, go to [your Spotify for Developers Dashboard](https://beta.developer.s
 * http://localhost:8001/callback
 
 Once you have created your app, replace the `client_id`, `redirect_uri` and `client_secret` in the examples with the ones you get from My Applications.
+
+### Running
+
+
+    $ node app
