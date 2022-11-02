@@ -5,14 +5,12 @@
 // console.log('Listening on 8001');
 // app.listen(8001);
 
-import SpotifyWebApi from "spotify-web-api-js";
+var express = require('express');
+var app = express();
+app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/autenticacao'));
+app.use(express.static(__dirname + '/dashboard'));
+app.use(express.static(__dirname + '/servicos'));
+console.log('Listening on 8001');
+app.listen(8001);
 
-var spotifyApi = new SpotifyWebApi();
-
-spotifyApi.setAccessToken(spotifyApi.getAccessToken());
-
-// const app = document.getElementById("app");
-
-console.log(spotifyApi.getMe());
-console.log(spotifyApi.getMyTopArtists());
-console.log(spotifyApi.getMyTopTracks());
