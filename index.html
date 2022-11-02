@@ -87,18 +87,28 @@
       } else {
         localStorage.removeItem(stateKey);
         if (access_token) {
-          spotifyApi.setAccessToken('Bearer ' + access_token);
-          $.ajax({
-            url: 'https://api.spotify.com/v1/me',
-            headers: {
-              'Authorization': 'Bearer ' + access_token
-            },
-            success: function (response) {
-              userProfilePlaceholder.innerHTML = userProfileTemplate(response);
-              $('#login').hide();
-              $('#loggedin').show();
-            }
-          });
+          spotifyApi.setAccessToken(access_token);
+          spotifyApi.getAlbum('5U4W9E5WsYb2jUQWePT8Xm')
+  .then(function (data) {
+    console.log(data);
+  })
+  .catch(function (error) {
+    console.error(error);
+  });
+
+
+          //})
+          // $.ajax({
+          //   url: 'https://api.spotify.com/v1/me',
+          //   headers: {
+          //     'Authorization': 'Bearer ' + access_token
+          //   },
+          //   success: function (response) {
+          //     userProfilePlaceholder.innerHTML = userProfileTemplate(response);
+          //     $('#login').hide();
+          //     $('#loggedin').show();
+          //   }
+          // });
         } else {
           $('#login').show();
           $('#loggedin').hide();
