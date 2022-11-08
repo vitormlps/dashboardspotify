@@ -23,12 +23,12 @@ function generateRandomString(length) {
   return text;
 };
 
-function loggar() {
+function loggar(urlRedirect) {
 
   var client_id = '1ab0652972a0487aaac4a411b3f4fb78'; // Your client id
-  var redirect_uri = 'http://localhost:8001'; // Your redirect uri
-
-  var state = generateRandomString(16);
+  var redirect_uri = 'http://localhost:8001/autenticacao/index.html'; // Your redirect uri
+  console.log("redirect to:" + redirect_uri);
+  var state = btoa(urlRedirect);
 
   localStorage.setItem(stateKey, state);
   var scope = 'user-read-private user-read-email';

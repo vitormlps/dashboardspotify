@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Dashboard Spotify</title>
 </head>
-
+<script src="../autenticacao/script.js"></script>
 <body>
   <div class="container">
     <div class="logo">
@@ -16,14 +16,7 @@
     </div>
 
     <div class="login_box">
-      <form method="post">
-        <span> E-mail </span>
-        <input id="email" type="email" name="email"></input>
-
-        <span> Password </span>
-        <input id="password" type="password" name="password"></input>
-        <button class="login_submit" type="submit" name="submit"> Login </button>
-      </form>
+        <button id="login-button" onClick="loggar('dashboard/dashboard.html')" class="btn btn-primary">Loggar</button>
     </div>
 
     <footer class="credits">
