@@ -89,26 +89,34 @@
         if (access_token) {
           spotifyApi.setAccessToken(access_token);
           spotifyApi.getAlbum('5U4W9E5WsYb2jUQWePT8Xm')
-  .then(function (data) {
-    console.log(data);
-  })
-  .catch(function (error) {
-    console.error(error);
-  });
+              .then(function (data) {
+                console.log(data);
+              })
+              .catch(function (error) {
+                console.error(error);
+              });
 
+        ////////////////
+        // fetch('https://api.spotify.com/v1/me', {
+        //   method: 'GET', 
+        //   headers: {
+        //       'Content-Type': 'application/json',
+        //       'Authorization' : 'Bearer' + access_token
+        //   }
+        // }
+        // )
+        // .then( (response) => {
+        //   const user_data = response.json()
+        //   document.getElementById('nome').innerHTML = user_data.display_name
+        //   console.log('Deu erro quando foi pegar o nome do cara')
+          
+        // })
+        // .then((data) => {
+        //   document.getElementById('nome').innerHTML = data.display_name
+        //   console.log(data)
+        // });
+        ////////////////
 
-          //})
-          // $.ajax({
-          //   url: 'https://api.spotify.com/v1/me',
-          //   headers: {
-          //     'Authorization': 'Bearer ' + access_token
-          //   },
-          //   success: function (response) {
-          //     userProfilePlaceholder.innerHTML = userProfileTemplate(response);
-          //     $('#login').hide();
-          //     $('#loggedin').show();
-          //   }
-          // });
         } else {
           $('#login').show();
           $('#loggedin').hide();

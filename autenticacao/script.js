@@ -25,13 +25,14 @@ function generateRandomString(length) {
 
 function loggar(urlRedirect) {
 
-  var client_id = '1ab0652972a0487aaac4a411b3f4fb78'; // Your client id
+  // var client_id = '1ab0652972a0487aaac4a411b3f4fb78'; // Your client id
+  var client_id = 'ced9ad62e7a946b993ef628a712fdc20'; // Your client id
   var redirect_uri = 'http://localhost:8001/autenticacao/index.html'; // Your redirect uri
   console.log("redirect to:" + redirect_uri);
   var state = btoa(urlRedirect);
 
   localStorage.setItem(stateKey, state);
-  var scope = 'user-read-private user-read-email';
+  var scope = 'user-read-private user-read-email user-top-read';
 
   var url = 'https://accounts.spotify.com/authorize';
   url += '?response_type=token';
