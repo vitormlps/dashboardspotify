@@ -5,8 +5,6 @@ window.onload = function () {
     const access_token = urlParams.get('access_token')
 
     // Pega o nome do miliante
-    // fetch('https://api.spotify.com/v1/users/k6ckd77us21ce6bf443xhngiw', {
-    // fetch('https://api.spotify.com/v1/users/22k37swejyoqrt5v2hsxmrlry', {
     fetch('https://api.spotify.com/v1/me', {
         method: 'GET', 
         headers: {
@@ -20,20 +18,11 @@ window.onload = function () {
         var oResponse = await response
 
         document.getElementById('nome').innerHTML = user_data.display_name
-        // console.log('Deu erro quando foi pegar o nome do cara')
         console.log(response)
-    })
-    .then( async (data) => {
-
-        var oData = await data
-        console.log(data)
-        // document.getElementById('nome').innerHTML = data.display_name
-        // console.log(data)
     });
 
     // Pega os dados dos gráficos de torres
     fetch('https://api.spotify.com/v1/me/top/artists', {
-    // fetch('https://api.spotify.com/v1/users/22k37swejyoqrt5v2hsxmrlry/top/artists', {
         method: 'GET', 
         headers: {
             'Content-Type': 'application/json',
@@ -41,18 +30,23 @@ window.onload = function () {
         }
     })
     .then( async (response) => {
-        //////////////////////////////////////////////
         response.json().then((data) => {
         
             let aDataPoints = []
            
             let count = 40
             data.items.forEach((artist) =>{
+                count -= 10
                 oDataPoint = { 
-                    y:     count - 10, 
+                    y:     count, 
                     label: artist.name 
                 }
-                aDataPoints.push(oDataPoint)
+
+                if (count > 0) {
+                    aDataPoints.push(oDataPoint)
+                }else{
+                    return
+                }
             })
             
             var chart = new CanvasJS.Chart("artistas", {
@@ -76,9 +70,6 @@ window.onload = function () {
         }).catch((err) => {
             console.log(err);
         }) 
-        /////////////////////////////////////////////////////////
-    })
-    .then( async (data) => {
     });
 
     fetch('https://api.spotify.com/v1/me/top/tracks', {
@@ -97,12 +88,18 @@ window.onload = function () {
             if (!data) {
                 return
             }
+
+            let count = 100
             data.items.forEach((track) =>{
+                count -= 10
                 oDataPoint = { 
-                        y:     track.popularity, 
+                        y:     count, 
                         label: track.name 
                     }
-                aDataPoints.push(oDataPoint)
+
+                if (count > 0) {
+                    aDataPoints.push(oDataPoint)
+                }
             })
             
             var chart2 = new CanvasJS.Chart("musicas", {
@@ -122,17 +119,9 @@ window.onload = function () {
             });
             chart2.render();
 
-
-
-
         }).catch((err) => {
             console.log(err);
         }) 
 
-    })
-    .then( async (response) => {
-
-        
     });
-
 }
