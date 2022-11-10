@@ -25,8 +25,7 @@ function generateRandomString(length) {
 
 function loggar(urlRedirect) {
 
-  // var client_id = '1ab0652972a0487aaac4a411b3f4fb78'; // Your client id
-  var client_id = 'ced9ad62e7a946b993ef628a712fdc20'; // Your client id
+  var client_id = 'fcb76e2b2088499183a2caaa6f341b46'; // Your client id
   var redirect_uri = 'http://localhost:8001/autenticacao/index.html'; // Your redirect uri
   console.log("redirect to:" + redirect_uri);
   var state = btoa(urlRedirect);
