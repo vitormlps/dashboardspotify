@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="normalize.css">
@@ -9,6 +10,7 @@
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashfy</title>
+<<<<<<< HEAD
   </head>
   <body>
       
@@ -44,12 +46,54 @@
                     </figure>
                 </div>
             </section>
+=======
+</head>
+>>>>>>> 73a1bd7687590b5dfa736d70985040b1ded3ef02
 
+<body>
+    <section class="nav">
+        <div class="logo">
+            <img src="../login/img/Spotify_Logo_RGB_Green.png" alt="Spotify logo">
         </div>
-            
-        </body>
-        
+        <div class="logout">
+            <button id="logout" onClick="deslogar()"> Log out </button>
+        </div>
+    </section>
+    <section class="dashboard">
+        <div class="row">
+            <div class="perfil">
+                <h2>
+                    <span id="nome">Fulano</span>, seu estilo é
+                </h2>
+                <h1 id="estilo"> Nenhum </h1>
+                <div class="compartilhar">
+                    <button id="compartilhar"> Compartilhar </button>
+                </div>
+            </div>
+
+            <div class="grafico">
+                <figure id="generos"></figure>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="grafico">
+                <figure id="artistas"></figure>
+            </div>
+
+            <div class="grafico">
+                <figure id="musicas"></figure>
+            </div>
+        </div>
+        <script src="../autenticacao/script.js"></script>
         <script src="./torres.js"></script>
         <script src="./generos.js"></script>
+<<<<<<< HEAD
         <script src="./btnCompartilhar.js"></script>
         </html>
+=======
+    </section>
+</body>
+
+</html>
+>>>>>>> 73a1bd7687590b5dfa736d70985040b1ded3ef02
