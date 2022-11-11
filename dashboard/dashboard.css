@@ -1,70 +1,37 @@
-*{
-    margin: 0;
-    padding: 0;
-    
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Patrick+Hand&family=Roboto:wght@300;400;500&family=Tai+Heritage+Pro:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
 
-
-#principal{
-    min-width: 1349px;
-    max-width: 1450px;
-    margin: 0 auto;
-}
-
-#pagina1{
-    min-width: 1000px;
-    max-width: 2000px;
-    margin-top: 0;
-    background-size: 2100px;
-    height: 600px;
-}
-
-figure{
-    margin-top: 0;
-    margin-block-start: 0;
-    margin-inline-start: 0;
-}
-
-#quadro4, #quadro3, #quadro1, #quadro2{
-    float: left;
-    width: 674px;
-    height: 304px;
-}
-
-.quadros-amarelos{
-    height: 400px;
-    background-color: cadetblue;
-}
-.quadros-vermelhos{
-    height: 400px;
-    background-color: #a21e1d;
-}
-
-html, body, #container {
-    width: 80%;
-    height: 80%;
+body {
     margin: 0;
     padding: 0;
-  }
+}
 
-.estilo{
-    margin: 0 auto;
-    margin-top: 60px;
-    width: 50%;
-    height: 50%;
+.dashboard {}
+
+.row {
+    height: 39vh;
+    padding: 5%;
+}
+
+.perfil {
+    width: 49%;
     font-size: 20px;
     font-family: 'Anton', sans-serif;
     font-weight: 500;
+    margin: 0;
+    display: inline-block;
 }
 
-.container{
-    float: left;
-    border: black;
+.grafico {
+    width: 50%;
+    display: inline-block;
+    margin: 0;
 }
 
-.btn{
+figure#musicas {
+    float: right;
+}
+
+.btn {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 500;
@@ -90,7 +57,8 @@ html, body, #container {
     background-color: #F50A2C;
     border: 1px solid #F50A2C;
     color: #fff;
-    margin-right: 15px; /*espaçamento entre os btões*/
+    margin-right: 15px;
+    /*espaçamento entre os btões*/
 }
 
 .btn:hover,

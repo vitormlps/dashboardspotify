@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="normalize.css">
@@ -9,44 +10,37 @@
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashfy</title>
-  </head>
-  <body>
-      
-      <div id="principal">
-          
-          <section id="pagina1">
-              <div>
-                  <figure id="quadro1" class="quadros-amarelos" > 
+</head>
 
-                      <div class="estilo">
-                          <h2><spam id="nome">Fulano</spam>! Seu estilo favorito é</h2>
-                          <h1 id="estilo">Nenhum</h1>
-                                    
-                          <div class="btn"> Compartilhar </div>
-                      </div>
-                               
-                    </figure>
-                            
-                    <figure id="quadro2" class="quadros-vermelhos"> 
-                        <div id="generos" style="height: 100%; width: 100%"></div>
-                    </figure>
-                </div>
-                
-                <div>
-                    <figure id="quadro4" class="quadros-vermelhos"> 
-                        <div id="artistas" style="height: 100%; width: 100%"></div>
-                    </figure>
-                    
-                    <figure id="quadro3" class="quadros-amarelos"> 
-                        <div id="musicas" style="height: 100%; width: 100%"></div>
-                    </figure>
-                </div>
-            </section>
+<body>
+    <section class="dashboard">
+        <div class="row">
+            <div class="perfil">
+                <h2>
+                    <spam id="nome">Fulano</spam>! Seu estilo favorito é
+                </h2>
+                <h1 id="estilo">Nenhum</h1>
 
+                <div class="btn"> Compartilhar </div>
+            </div>
+
+            <div class="grafico">
+                <figure id="generos"></figure>
+            </div>
         </div>
-            
-        </body>
-        
+
+        <div class="row">
+            <div class="grafico">
+                <figure id="artistas"></figure>
+            </div>
+
+            <div class="grafico">
+                <figure id="musicas"></figure>
+            </div>
+        </div>
         <script src="./torres.js"></script>
         <script src="./generos.js"></script>
-        </html>
+    </section>
+</body>
+
+</html>
