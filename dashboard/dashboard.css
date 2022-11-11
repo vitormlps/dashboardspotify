@@ -1,68 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Patrick+Hand&family=Roboto:wght@300;400;500&family=Tai+Heritage+Pro:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
 
-body {
+* {
     margin: 0;
     padding: 0;
 }
 
-.dashboard {}
+body {
+    background: #191414;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    width: 90vw;
+    height: 5vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .logo img {
+    height: 5vh;
+}
+
+.dashboard {
+    width: 90vw;
+    height: 90vh;
+}
 
 .row {
-    height: 39vh;
-    padding: 5%;
+    height: 44vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .perfil {
-    width: 49%;
-    font-size: 20px;
-    font-family: 'Anton', sans-serif;
-    font-weight: 500;
+    width: 50%;
+    margin-top: 5%;
+}
+
+.perfil h1,
+.perfil h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
     margin: 0;
-    display: inline-block;
+    margin-bottom: 2%;
+}
+
+.perfil span,
+.perfil h1 {
+    color: #1DB954;
+    font-weight: 900;
+}
+
+h1#estilo {
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.compartilhar {
+    margin-top: 4%;
+}
+
+button#compartilhar {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 200px;
+    background-color: #1DB954;
+    padding: 10px 30px;
+}
+
+button#compartilhar:hover,
+button#compartilhar:active {
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    background-color: #179242;
+}
+
+button#logout {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 200px;
+    background-color: #1DB954;
+    padding: 10px 30px;
+}
+
+button#logout:hover,
+button#logout:active {
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    background-color: #179242;
 }
 
 .grafico {
     width: 50%;
-    display: inline-block;
-    margin: 0;
+    margin-top: 5%;
+}
+
+figure#generos {
+    height: 85%;
 }
 
 figure#musicas {
     float: right;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 200px;
-    color: #fff;
-    background-color: #F50A2C;
-    border: 1px solid #F50A2C;
-    color: #fff;
-    font-size: 16px;
-}
-
-.btn:link,
-.btn:visited {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 200px;
-    color: #fff;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-    background-color: #F50A2C;
-    border: 1px solid #F50A2C;
-    color: #fff;
-    margin-right: 15px;
-    /*espaçamento entre os btões*/
-}
-
-.btn:hover,
-.btn:active {
-    background-color: #cf6d17;
-    border: 1px solid #cf6d17;
 }

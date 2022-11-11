@@ -14,19 +14,23 @@
 
 <body>
     <section class="nav">
-        <div class="logout_box">
-            <button id="logout-button" onClick="deslogar()" class="btn btn-primary">Log out</button>
+        <div class="logo">
+            <img src="../login/img/Spotify_Logo_RGB_Green.png" alt="Spotify logo">
+        </div>
+        <div class="logout">
+            <button id="logout" onClick="deslogar()"> Log out </button>
         </div>
     </section>
     <section class="dashboard">
         <div class="row">
             <div class="perfil">
                 <h2>
-                    <spam id="nome">Fulano</spam>! Seu estilo favorito é
+                    <span id="nome">Fulano</span>, seu estilo é
                 </h2>
-                <h1 id="estilo">Nenhum</h1>
-
-                <div class="btn"> Compartilhar </div>
+                <h1 id="estilo"> Nenhum </h1>
+                <div class="compartilhar">
+                    <button id="compartilhar"> Compartilhar </button>
+                </div>
             </div>
 
             <div class="grafico">
