@@ -22,62 +22,27 @@ body {
   width: 40vw;
 }
 
-.login_box {
-  width: 30vw;
-  height: 10vh;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 2vh 2vw;
-  margin: 5vh 0;
-}
-
-form {
-  width: 80%;
-  height: 80%;
-  margin: auto;
-  margin-top: 2vh;
-}
-
-form span {
-  width: 19%;
-  font-size: 0.9vw;
-  display: inline-block;
-}
-
-input {
-  width: 72%;
-  height: 2.5vw;
-  background: #E2E2E2;
-  border-radius: 5px;
-  border: unset;
-  outline: none;
-  padding: 0;
-  margin: 1.5vh 0;
-  padding: 0.75vh 0.75vw;
-}
-
 .login_submit {
-  width: 100%;
-  height: 6vh;
+  width: 15vw;
+  height: 10vh;
   outline: none;
-  background: #1B9245;
+  background-color: #1DB954;
   border: unset;
   border-radius: 6px;
   cursor: pointer;
   color: #fff;
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: 700;
-  margin-top: 1.7vh;
-  /* transition: .5s ease-in-out; */
-  transition-duration: 0.4s;
+  border-radius: 10px;
+  padding: 1vh 1vw;
+  margin: 5vh 0;
+  transition: .1s ease-in-out;
 }
 
-.login_submit:hover {
-  background-color: #4CAF50;
-}
-
+.login_submit:hover,
 .login_submit:active {
-  background-color: #0f5728;
+  color: #1DB954;
+  background-color: #fff;
 }
 
 .credits {
