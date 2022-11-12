@@ -10,45 +10,7 @@
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashfy</title>
-<<<<<<< HEAD
-  </head>
-  <body>
-      
-      <div id="principal">
-          
-          <section id="pagina1">
-              <div>
-                  <figure id="quadro1" class="quadros-amarelos" > 
-
-                      <div class="estilo">
-                          <h2><spam id="nome">Fulano</spam>! Seu estilo favorito é</h2>
-                          <h1 id="estilo">Nenhum</h1>
-                                    
-                          <div class="btn" id="btn" >
-                            <button type='button' onclick="myFunction()">Compartilhar</button>
-                          </div>
-                      </div>
-                               
-                    </figure>
-                            
-                    <figure id="quadro2" class="quadros-vermelhos"> 
-                        <div id="generos" style="height: 100%; width: 100%"></div>
-                    </figure>
-                </div>
-                
-                <div>
-                    <figure id="quadro4" class="quadros-vermelhos"> 
-                        <div id="artistas" style="height: 100%; width: 100%"></div>
-                    </figure>
-                    
-                    <figure id="quadro3" class="quadros-amarelos"> 
-                        <div id="musicas" style="height: 100%; width: 100%"></div>
-                    </figure>
-                </div>
-            </section>
-=======
 </head>
->>>>>>> 73a1bd7687590b5dfa736d70985040b1ded3ef02
 
 <body>
     <section class="nav">
@@ -67,7 +29,7 @@
                 </h2>
                 <h1 id="estilo"> Nenhum </h1>
                 <div class="compartilhar">
-                    <button id="compartilhar"> Compartilhar </button>
+                    <button id="compartilhar" type='button' onclick="myFunction()"> Compartilhar </button>
                 </div>
             </div>
 
@@ -77,23 +39,20 @@
         </div>
 
         <div class="row">
-            <div class="grafico">
+            <div class="grafico" id="grafico-artistas">
                 <figure id="artistas"></figure>
             </div>
-
             <div class="grafico">
                 <figure id="musicas"></figure>
             </div>
         </div>
+
         <script src="../autenticacao/script.js"></script>
         <script src="./torres.js"></script>
         <script src="./generos.js"></script>
-<<<<<<< HEAD
         <script src="./btnCompartilhar.js"></script>
-        </html>
-=======
+
     </section>
 </body>
 
 </html>
->>>>>>> 73a1bd7687590b5dfa736d70985040b1ded3ef02

@@ -103,12 +103,22 @@ button#logout:active {
 .grafico {
     width: 50%;
     margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-figure#generos {
+.grafico#grafico-artistas {
+    align-items: flex-start;
+
+}
+
+figure {
+    width: 90%;
     height: 85%;
 }
 
-figure#musicas {
-    float: right;
+.anychart-credits,
+.canvasjs-chart-credit {
+    display: none;
 }
