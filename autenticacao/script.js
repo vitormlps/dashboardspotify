@@ -1,8 +1,8 @@
 var stateKey = 'spotify_auth_state';
-      /**
-       * Obtains parameters from the hash of the URL
-       * @return Object
-       */
+/**
+ * Obtains parameters from the hash of the URL
+ * @return Object
+ */
 function getHashParams() {
   var hashParams = {};
   var e, r = /([^&;=]+)=?([^&;]*)/g,
@@ -45,10 +45,10 @@ function loggar(urlRedirect) {
 
 function deslogar() {
 
-const url = 'https://www.spotify.com/logout/'                                                                                                                                                                                                                                                                               
-const spotifyLogoutWindow = window.open(url, 'Spotify Logout', 'width=700,height=500,top=40,left=40')                                                                                                
-setTimeout(() => {
-  spotifyLogoutWindow.close();
-  window.location = 'http://localhost:8001/login';
-}, 2000)
+  const url = 'https://www.spotify.com/logout/'
+  const spotifyLogoutWindow = window.open(url, 'Spotify Logout', 'width=700,height=500,top=40,left=40')
+  setTimeout(() => {
+    spotifyLogoutWindow.close();
+    window.location = 'http://localhost:8001';
+  }, 2000)
 }
