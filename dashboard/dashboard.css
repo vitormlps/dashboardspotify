@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html{
+    min-width: 987px;
+}
+
 body {
     background: #191414;
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -60,7 +64,7 @@ body {
 }
 
 h1#estilo {
-    font-size: 80px;
+    font-size: 60px;
     text-transform: uppercase;
 }
 
@@ -106,6 +110,7 @@ button#logout:active {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 15px;
 }
 
 .grafico#grafico-artistas {

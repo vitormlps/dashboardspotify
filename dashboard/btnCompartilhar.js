@@ -1,3 +1,13 @@
-function myFunction() {
-   window.open('https://www.google.com.br')
-  }
+function download() {
+   let div =
+       document.getElementById('all');
+
+   html2canvas(div).then(
+       function (canvas) {
+         var a = document.createElement("a"); 
+         a.href     = canvas.toDataURL() 
+         a.download = 'Meu resultado'
+         a.click(); 
+
+       })
+}

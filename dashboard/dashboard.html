@@ -8,12 +8,16 @@
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="./btnCompartilhar.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../login/img/Spotify-icon.png" type="image/x-icon">
     <title>Dashfy</title>
 </head>
 
-<body>
+<body id="all">
     <section class="nav">
         <div class="logo">
             <img src="../login/img/Spotify_Logo_RGB_Green.png" alt="Spotify logo">
@@ -30,7 +34,7 @@
                 </h2>
                 <h1 id="estilo"> Nenhum </h1>
                 <div class="compartilhar">
-                    <button id="compartilhar" type='button' onclick="myFunction()"> Compartilhar </button>
+                    <button id="compartilhar" type='button' onClick="download()"> Compartilhar </button>
                 </div>
             </div>
 
