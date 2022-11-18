@@ -50,6 +50,6 @@ function deslogar() {
   const spotifyLogoutWindow = window.open(url, 'Spotify Logout', 'width=700,height=500,top=40,left=40')
   setTimeout(() => {
     spotifyLogoutWindow.close();
-    window.location = 'http://localhost:8001';
+    window.location = 'https://vitormlps.github.io/dashboardspotify/';
   }, 2000)
 }
