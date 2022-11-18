@@ -26,7 +26,8 @@ function generateRandomString(length) {
 function loggar(urlRedirect) {
 
   var client_id = 'fcb76e2b2088499183a2caaa6f341b46'; // Your client id
-  var redirect_uri = 'http://localhost:8001/autenticacao/index.html'; // Your redirect uri
+  //var redirect_uri = 'http://localhost:8001/autenticacao/index.html'; // Your redirect uri
+   var redirect_uri = 'https://vitormlps.github.io/dashboardspotify/autenticacao/index.html';
   console.log("redirect to:" + redirect_uri);
   var state = btoa(urlRedirect);
 
