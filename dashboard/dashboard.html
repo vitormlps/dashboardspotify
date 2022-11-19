@@ -8,10 +8,10 @@
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  
+
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
     <script src="./btnCompartilhar.js"></script>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../login/img/Spotify-icon.png" type="image/x-icon">
     <title>Dashfy</title>
@@ -22,8 +22,11 @@
         <div class="logo">
             <img src="../login/img/Spotify_Logo_RGB_Green.png" alt="Spotify logo">
         </div>
+        <div class="pesquisa">
+            <button id="pesquisa" type='button' onClick="realizarPesquisa()"> Pesquisa de Satisfação </button>
+        </div>
         <div class="logout">
-            <button id="logout" onClick="deslogar()"> Log out </button>
+            <button id="logout" type='button' onClick="deslogar()"> Log out </button>
         </div>
     </section>
     <section class="dashboard">
@@ -52,7 +55,7 @@
             </div>
         </div>
 
-        <script src="./btnCompartilhar.js"></script>
+        <script src="./botoes.js"></script>
         <script src="./graficos.js"></script>
         <script src="../autenticacao/script.js"></script>
     </section>
