@@ -1,9 +1,9 @@
 window.onload = function () {
-
+    var accessKey = 'spotify_access';
     const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const access_token = urlParams.get('access_token')
-
+    //const urlParams = new URLSearchParams(queryString);
+    //const access_token = urlParams.get('access_token')
+    const access_token = localStorage.getItem(accessKey);
     // Pega o User Display Name da API
     fetch('https://api.spotify.com/v1/me', {
         method: 'GET',
