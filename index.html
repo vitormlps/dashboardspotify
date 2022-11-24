@@ -12,14 +12,15 @@
 <script src="./autenticacao/script.js"></script>
 
 <body>
-  <div class="container">
-    <div class="logo">
-      <img src="./login/img/Spotify_Logo_RGB_Green.png" alt="Spotify logo">
+  <main class="container">
+    <div class="logo-box">
+      <img id="logo" src="./login/img/Spotify_Logo_RGB_Green.png" alt="Spotify logo">
     </div>
 
-    <div class="login_box">
-      <button id="login-button" class="login_submit" onClick="loggar('./dashboard/dashboard.html')"
-        class="btn btn-primary">Login</button>
+    <div class="login-box">
+      <button class="button" id="login-button" onClick="loggar('./dashboard/dashboard.html')">
+        Login
+      </button>
     </div>
 
     <footer class="credits">
@@ -29,7 +30,7 @@
       </p>
       <p> SENAC/RS - 2022/2 </p>
     </footer>
-  </div>
+  </main>
 </body>
 
 </html>
