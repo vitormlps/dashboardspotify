@@ -149,7 +149,7 @@ window.onload = function () {
                     type: "column",
                     showInLegend: false,
                     indexLabel: "{ label }",
-                    indexLabelFontSize: 20,
+                    indexLabelFontSize: 18,
                     indexLabelFontColor: "white",
                     indexLabelPlacement: "outside",
                     fillOpacity: .85,
